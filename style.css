@@ -1,0 +1,33 @@
+#Home{
+    height: 100vh;
+    background-color: white;
+}
+
+#Projects{
+    height: 100vh;
+    background-color:white;
+}
+
+#Contact{
+    height: 100vh;
+    background-color: white;
+}
+
+#logo{
+    margin-left: 50px;
+    margin-bottom: 4px;
+}
+
+.pnl{
+    font-family: 'Style Script';
+    font-size:xx-large;
+}
+
+#r-nav{
+    margin-right: 50px;
+    font-family: cursive;
+}
+
+.nav-link{
+    background-color: black;
+}
