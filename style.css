@@ -1,16 +1,20 @@
+
+.white{
+    color: white;
+}
 #Home{
     height: 100vh;
-    background-color: white;
+    background-color: rgb(178, 178, 12);
 }
 
 #Projects{
     height: 100vh;
-    background-color:white;
+    background-color: rgb(178, 178, 12);
 }
 
 #Contact{
-    height: 100vh;
-    background-color: white;
+    background-color: rgb(178, 178, 12);
+    
 }
 
 #logo{
@@ -24,10 +28,38 @@
 }
 
 #r-nav{
-    margin-right: 50px;
+    margin-right: 269px;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.left-nav{
+    margin-left: 217px;
+}
+
+.link{
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    color: white;
+}
+
+.link:hover{
+    color: grey;
+    font-size: 19px;
+}
+
+.l-hero{
     font-family: cursive;
 }
 
-.nav-link{
-    background-color: black;
+.profile{
+    height: 500px;
+    width: 333px;
+}
+
+.bgc{
+    background: color 0;;
 }
