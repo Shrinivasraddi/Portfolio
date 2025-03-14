@@ -2,18 +2,22 @@
 .white{
     color: white;
 }
+
+.gradient-background {
+    background: linear-gradient(300deg, #374fe8, #a241bd, #48a8d1);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+}
+
 #Home{
     height: 100vh;
-    background-color: rgb(178, 178, 12);
 }
 
 #Projects{
     height: 100vh;
-    background-color: rgb(178, 178, 12);
 }
 
 #Contact{
-    background-color: rgb(178, 178, 12);
     
 }
 
@@ -25,6 +29,7 @@
 .pnl{
     font-family: 'Style Script';
     font-size:xx-large;
+    font-weight: bolder;
 }
 
 #r-nav{
@@ -61,5 +66,10 @@
 }
 
 .bgc{
-    background: color 0;;
+    height: 300;
+    width: 400;
+}
+
+.cpr{
+    color: white;
 }

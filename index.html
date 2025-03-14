@@ -2,99 +2,118 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shri-Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Style Script' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri-Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Style Script' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <section id="Home"> <!--Home page -->
-        <div>
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom p-nav">
-                <a href="#Home"
-                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none left-nav">
-                    <img id="logo" width="50" height="45" src="./SG-logo.png" alt="logo of sg">
-                    <span class="pnl white">Shri.R.G</span>
-                </a>
-                <ul class="nav nav-pills" id="r-nav">
-                    <li class="nav-item "><a href="#Home" class="link" aria-current="page">Home</a></li>
-                    <li class="nav-item "><a href="#Projects" class="link">Projects</a></li>
-                    <li class="nav-item "><a href="#Contact" class="link">Contact</a></li>
-                </ul>
-            </header>
+  <section id="Home" class="gradient-background"> <!--Home page -->
+    <div>
+      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom p-nav">
+        <a href="#Home"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none left-nav">
+          <img id="logo" width="50" height="45" src="images/SG-logo.png" alt="logo of sg">
+          <span class="pnl white">Shri.R.G</span>
+        </a>
+        <ul class="nav nav-pills" id="r-nav">
+          <li class="nav-item "><a href="#Home" class="link" aria-current="page">Home</a></li>
+          <li class="nav-item "><a href="#Projects" class="link">Projects</a></li>
+          <li class="nav-item "><a href="#Contact" class="link">Contact</a></li>
+        </ul>
+      </header>
+    </div>
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="images/Photo1.png" class="d-block mx-lg-auto profile_pic profile" alt="Bootstrap Themes" width="700"
+            height="500" loading="lazy">
         </div>
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="Photo1.png" class="d-block mx-lg-auto profile_pic profile" alt="Bootstrap Themes" width="700"
-                        height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6 l-hero">
-                    <h1 class="display-5 fw-bold lh-1 mb-3 white">SHRINIVAS R G</h1>
-                    <h3 class="white">SOFTWARE DEVELOPER</h3>
-                    <p class="lead white">Enthusiastic CSE student with Java programming skills and knowledge of DSA,
-                        currently enhancing expertise in Full Stack Development. Passionate about software development
-                        and eager to contribute to innovative projects.</p>
-                </div>
-            </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3 white libre-baskerville-bold">SHRINIVAS R G</h1>
+          <h3 class="white">SOFTWARE DEVELOPER</h3>
+          <p class="lead white">Enthusiastic CSE student with Java programming skills and knowledge of DSA,
+            currently enhancing expertise in Full Stack Development. Passionate about software development
+            and eager to contribute to innovative projects.</p>
         </div>
-    </section>
-    <section id="Projects"> <!--Projects page -->
-        <div class="container px-4 py-5" id="custom-cards">
-            <h2 class="pb-2 border-bottom white">Projects</h2>
-        
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('Mahaveer.png');">
-                  <div class="d-flex flex-column h-100 p-5 text-white text-shadow-1 justify-content-center">
-                    <h3 class="pt-2 mt-3 mb-5 display-6 lh-1 fw-bold">Mahaveer Interiors</h3>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg bgc" style="background-image: url('s2v2.jpeg');">
-                  <div class="d-flex flex-column h-100 p-5 text-white text-shadow-1 justify-content-center">
-                    <h3 class="pt-2 mt-3 mb-5 display-6 lh-1 fw-bold">Sign To Voice Interpreter</h3>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-                  <div class="d-flex flex-column h-100 p-5 text-shadow-1 justify-content-center">
-                    <h3 class="pt-2 mt-3 mb-5 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <section id="Projects"> <!--Projects page -->
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom white">Projects</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('images/Mahaveer.png');">
+
           </div>
-    </section>
-    <section id="Contact"> <!--Contact page -->
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-              </ul>
-            </footer>
+          <div class="d-flex flex-column h-100 p-5 text-white text-shadow-1 justify-content-center">
+            <h3 class="pt-2 mt-3 ml-0 pl-0 mb-5 display-6 lh-1 fw-bold">Mahaveer Interiors</h3>
           </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg bgc"
+            style="background-image: url('images/s2v.png')">
+
+          </div>
+          <div class="d-flex flex-column h-100 p-5 text-white text-shadow-1 justify-content-center">
+            <h3 class="pt-2 mt-3 mb-5 display-6 lh-1 fw-bold">Sign To Voice Interpreter</h3>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg');">
+
+          </div>
+          <div class="d-flex flex-column h-100 p-5 text-shadow-1 justify-content-center">
+            <h3 class="pt-2 mt-3 mb-5 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Contact"> <!--Contact page -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center  border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class=" me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary cpr">© 2024 Company, Inc</span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#twitter"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#instagram"></use>
+              </svg></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
