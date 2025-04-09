@@ -11,6 +11,16 @@
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Portfolio website complete</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "cuGnHnvskKtAoXqIo",
+            });
+        })();
+    </script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -26,7 +36,7 @@
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Works</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -41,9 +51,11 @@
         <!--===== HOME =====-->
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Shrinivas R G</span><br> Web Developer</h1>
-                <a href="#" class="button" style="margin-right: 10px;">Resume</a>
-                <a href="#" class="button">Contact</a>
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Shrinivas R G</span><br> Web
+                    Developer</h1>
+                <a href="Shrinivasraddi_R_G_Resume.pdf" download="Shrinivas_Resume" class="button"
+                    style="margin-right: 10px;">Resume</a>
+                <a href="#contact" class="button">Contact</a>
             </div>
 
             <div class="home__social">
@@ -54,7 +66,7 @@
 
             <div class="home__img">
                 <img src="./images/Photo1.png" alt="Profile Image" class="home__blob-img">
-            </div>            
+            </div>
         </section>
 
         <!--===== ABOUT =====-->
@@ -65,11 +77,14 @@
                 <div class="about__img">
                     <img src="./images/profile_rnd.png" alt="">
                 </div>
-                
+
                 <div class="about_right">
                     <h2 class="about__subtitle">I'm Shrinivas,</h2>
-                    <p class="about__text">an enthusiastic Computer Science Engineering student with a strong foundation in Java and Data Structures & Algorithms. Currently, I am expanding my expertise in Full Stack Development to build scalable and efficient applications. I am eager to pursue opportunities in software development to apply my technical skills and problem-solving abilities.</p>           
-                </div>                                   
+                    <p class="about__text">an enthusiastic Computer Science Engineering student with a strong foundation
+                        in Java and Data Structures & Algorithms. Currently, I am expanding my expertise in Full Stack
+                        Development to build scalable and efficient applications. I am eager to pursue opportunities in
+                        software development to apply my technical skills and problem-solving abilities.</p>
+                </div>
             </div>
         </section>
 
@@ -98,7 +113,7 @@
 
         <!--===== WORK =====-->
         <section class="work section" id="work">
-            <h2 class="section-title work-title">Work</h2>
+            <h2 class="section-title work-title">Works</h2>
 
             <div class="work__container bd-grid">
                 <a href="https://mahaveerin.com/" class="work__img">
@@ -118,32 +133,14 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid" id="contactForm">
-                <form action="https://api.web3forms.com/submit" onsubmit="POST" class="contact__form">
-                    <input type="hidden" name="access_key" value="b5969f8e-1dad-4102-b49f-4f7ff1a45bbc">
-                    <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                    <input type="mail" name="email" placeholder="Email" class="contact__input" required>
-                    <textarea name="message" placeholder="Your Message" cols="0" rows="10" class="contact__input" required></textarea>
-                    <input type="submit" value="Send" class="contact__button button">
-                    <button type="submit" class="contact__button button">Submit</button>
+                <form class="contact__form">
+                    <input type="text" name="name" placeholder="Name" id="name" class="contact__input" required>
+                    <input type="mail" name="email" placeholder="Email" id="email" class="contact__input" required>
+                    <textarea name="message" placeholder="Your Message" cols="0" rows="10" id="message" class="contact__input"
+                        required></textarea>
+                    <button class="contact__button button" type="submit" onclick="sendMail()">Send</button>
                 </form>
             </div>
-            <p id="responseMessage"></p>
-            <script>
-                document.getElementById("contactForm").addEventListener("submit", async function(event) {
-                    event.preventDefault();
-                    
-                    const formData = new FormData(this);
-                    const responseMessage = document.getElementById("responseMessage");
-                
-                    const response = await fetch("http://localhost:5000/send-email", {
-                        method: "POST",
-                        body: formData
-                    });
-                
-                    const result = await response.json();
-                    responseMessage.textContent = result.message;
-                });
-            </script>
         </section>
     </main>
 
@@ -157,8 +154,6 @@
     <!--===== SCROLL REVEAL =====-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
