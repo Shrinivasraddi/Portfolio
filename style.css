@@ -431,6 +431,64 @@ h2 {
 }
 
 
+/* hello */
+#contact-container {
+      max-width: 600px;
+      margin: 80px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      border: 2px solid #58baff;
+    }
+
+    #contact-title {
+      text-align: center;
+      font-size: 28px;
+      color: #000000;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #58baff;
+      padding-bottom: 10px;
+    }
+
+    .contact-item {
+      width: 300px;
+      margin-bottom: 25px;
+    }
+
+    .label-email,
+    .label-phone,
+    .label-location {
+      display: block;
+      font-weight: 600;
+      color: #000000;
+      margin-bottom: 6px;
+      font-size: 16px;
+    }
+
+    #email-link,
+    #phone-link {
+      color: #58baff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    #email-link:hover,
+    #phone-link:hover {
+      text-decoration: underline;
+    }
+
+    #location-text {
+      font-size: 16px;
+      color: #000000;
+    }
+
+    /* Optional: Add subtle separator lines */
+    .contact-item:not(:last-child) {
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 15px;
+    }
+
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
@@ -441,7 +499,7 @@ h2 {
 }
 .footer__title {
   font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  margin-bottom: var(--mb-2);
 }
 .footer__social {
   margin-bottom: var(--mb-4);
@@ -452,6 +510,7 @@ h2 {
   margin: 0 var(--mb-2);
 }
 .footer__copy {
+  font-size: 1rem;
   font-size: var(--smaller-font-size);
 }
 

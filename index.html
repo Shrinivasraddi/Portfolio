@@ -53,7 +53,7 @@
             <div class="home__data">
                 <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Shrinivas R G</span><br> Web
                     Developer</h1>
-                <a href="Shrinivasraddi_R_G_Resume.pdf" download="Shrinivas_Resume" class="button"
+                <a href="ShrinivasRG_Resume.pdf" download="ShrinivasRG_Resume" class="button"
                     style="margin-right: 10px;">Resume</a>
                 <a href="#contact" class="button">Contact</a>
             </div>
@@ -107,6 +107,7 @@
                     <img src="skills/node.png" alt="Node.js">
                     <img src="skills/psql.png" alt="PostgreSql">
                     <img src="skills/spring.png" alt="Spring">
+                    <img src="skills/microsoft-certified-azure-fundamentals.png" alt="microsoft-certified-azure-fundamentals">
                 </div>
             </div>
         </section>
@@ -122,8 +123,8 @@
                 <a href="https://devfolio.co/projects/sv-interpreter-417c" class="work__img">
                     <img src="images/s2v.png" alt="work_screenshot">
                 </a>
-                <a href="" class="work__img">
-                    <img src="assets/img/work3.jpg" alt="">
+                <a href="E-Commerce-Website.html" class="work__img">
+                    <img src="E-Commerce-Images/home-page.jpg" alt="home-page">
                 </a>
             </div>
         </section>
@@ -133,13 +134,20 @@
             <h2 class="section-title">Contact</h2>
 
             <div class="contact__container bd-grid" id="contactForm">
-                <form class="contact__form">
-                    <input type="text" name="name" placeholder="Name" id="name" class="contact__input" required>
-                    <input type="mail" name="email" placeholder="Email" id="email" class="contact__input" required>
-                    <textarea name="message" placeholder="Your Message" cols="0" rows="10" id="message" class="contact__input"
-                        required></textarea>
-                    <button class="contact__button button" type="submit" onclick="sendMail()">Send</button>
-                </form>
+                <div class="contact-item">
+                    <label class="label-email">Email:</label>
+                    <a id="email-link" href="mailto:shrinivasraddigunjalad@gmail.com">shrinivasraddigunjalad@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <label class="label-phone">Phone:</label>
+                    <a id="phone-link" href="tel:+919591389862">+91 9591389862</a>
+                </div>
+
+                <div class="contact-item">
+                    <label class="label-location">Location:</label>
+                    <p id="location-text">Bengaluru, Karnataka, India</p>
+                </div>
             </div>
         </section>
     </main>
@@ -147,7 +155,8 @@
     <!--===== FOOTER =====-->
     <footer class="footer">
         <p class="footer__title">Shrinivas R G</p>
-        <p class="footer__copy">&#169; Shri.R.G. All rigths reserved</p>
+        <p class="footer__copy">Thanks for making it to the end! &nbsp; Your time means a lot to me.</p>
+
     </footer>
 
 
