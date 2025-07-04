@@ -250,7 +250,7 @@ img {
 .home__social {
   margin-bottom: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-left: 4px;
 }
 
@@ -263,6 +263,10 @@ img {
 
 .home__social-icon:hover {
   color: var(--first-color);
+}
+
+#github-icon {
+  padding-left: 15px;
 }
 
 .home__img {
@@ -720,7 +724,7 @@ h2 {
     padding: 0.75rem 1.5rem;
   }
 
- #home,
+  #home,
   #about,
   #skills,
   #work {
@@ -797,23 +801,24 @@ h2 {
     font-size: 0.75rem;
   }
 }
-  
 
-  /* Footer */
-  .footer {
-    padding: 1rem;
-  }
 
-  .footer__title {
-    font-size: 1.4rem;
-  }
+/* Footer */
+.footer {
+  padding: 1rem;
+}
 
-  .footer__copy {
-    font-size: var(--smaller-font-size);
-  }
+.footer__title {
+  font-size: 1.4rem;
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+}
 
 
 @media screen and (min-width: 451px) and (max-width: 600px) {
+
   /* Adjust logo and nav */
   .image-container {
     transform: none;
@@ -980,6 +985,7 @@ h2 {
 }
 
 @media screen and (min-width: 600px) and (max-width: 770px) {
+
   /* Nav bar layout */
   .nav {
     display: flex;
