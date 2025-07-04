@@ -1,9 +1,10 @@
-function sendMail(){
-    let parms = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        message: document.getElementById("message").value,
-    }
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('nav-toggle');
+  const nav = document.getElementById('nav-menu');
 
-    emailjs.send("service_89jrxl6","template_32ebo0c",parms).then(alert("Email Sent!!"));
-}
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  }
+});
