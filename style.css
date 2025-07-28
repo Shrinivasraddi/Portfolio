@@ -308,7 +308,7 @@ img {
 /* ===== ABOUT =====*/
 
 .about_title {
-  margin-top: 70px;
+  margin-top: 25px;
 }
 
 .about__container {
@@ -413,6 +413,12 @@ h2 {
   margin-bottom: 53px;
 }
 
+#work-more{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;;
+}
+
 .work-title {
   margin-top: 60px;
 }
@@ -438,6 +444,7 @@ h2 {
 .mahaveer-img {
   height: 92%;
 }
+
 
 /* ===== CONTACT =====*/
 
@@ -478,11 +485,22 @@ h2 {
   max-width: 600px;
   margin: 80px auto;
   background-color: #ffffff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border: 2px solid #58baff;
 }
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
 
 #contact-title {
   text-align: center;
